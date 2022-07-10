@@ -11,6 +11,14 @@ app.get("/b/", (req, res) => {
     res.json(data);
 });
 
+app.get("/a/", (req, res) => {
+    const data = {as: 3};
+    res.json(data);
+});
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
