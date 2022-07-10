@@ -17,6 +17,17 @@ app.get("/a/", (req, res) => {
 });
 
 
+const endPointCall = (req, res) => {
+    console.log (req.body);
+
+    res.json(req.body);
+};
+
+
+app.post("/post/", endPointCall);
+
+
+
 
 
 
